@@ -25,7 +25,7 @@ function createWindow() {
         controllerWindow.loadURL("http://localhost:5173#controller", );
 
     } else {
-        const indexPath = path.join(__dirname, "../renderer-dist/index.html")
+        const indexPath = path.join(app.getAppPath(), "renderer-dist/index.html")
         mainWindow.loadFile(indexPath);
         controllerWindow.loadFile(indexPath, {hash: "controller"});
     }
