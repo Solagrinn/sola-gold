@@ -1,20 +1,23 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@theme {
+  @keyframes shimmer {
+    from { transform: translateX(-150%) skewX(-15deg); }
+    to { transform: translateX(150%) skewX(-15deg); }
+  }
+  --animate-bazaar-shimmer: shimmer 10s infinite linear;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --color-logo-silver: #d4d4d8;  /* Lighter silver */
+  --color-kiosk-bg: #3f3f46;     /* Light Industrial Gray */
+  --color-card-grey: #52525b;    /* Lighter Card Gray */
 }
 
-
-
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--color-kiosk-bg) !important;
+}
 
 button {
   border-radius: 8px;
