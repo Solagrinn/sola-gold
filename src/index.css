@@ -6,10 +6,14 @@
     to { transform: translateX(150%) skewX(-15deg); }
   }
   --animate-bazaar-shimmer: shimmer 10s infinite linear;
+  --animate-bazaar-shimmer-v2: shimmer 7s infinite linear;
+  --animate-bazaar-shimmer-v3: shimmer 13s infinite linear;
 
   --color-logo-silver: #d4d4d8;  /* Lighter silver */
   --color-kiosk-bg: #2c2c32;     /* Light Industrial Gray */
   --color-card-grey: #52525b;    /* Lighter Card Gray */
+
+  --font-inter: "Inter", sans-serif;
 }
 
 html, body, #root {
@@ -18,6 +22,8 @@ html, body, #root {
   height: 100%;
   background-color: var(--color-kiosk-bg) !important;
 }
+
+
 
 button {
   border-radius: 8px;

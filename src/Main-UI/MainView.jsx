@@ -16,16 +16,33 @@ const MainView = () => {
         <div>
             mainUi
             <div>{uiState}</div>
-            <div className={"flex  justify-center "}>
+            <div className={"flex  justify-evenly "}>
 
-                <div className={"flex"}>
+                <div className={"flex items-center gap-6"}> {/* Added gap for spacing */}
+                    <BtlIcon height={200} width={200} color={"#fff"} />
 
-                    <BtlIcon height={200} width={200} color={"#fff"}></BtlIcon>
 
+                    <div className={"flex flex-col items-start"}>
+                        <div className={"font-inter font-black text-8xl text-white leading-none"}>BTL</div>
+                        <div className={"font-inter font-bold text-xl text-white tracking-[0.3em] mt-2 uppercase"}>
+                            Kıymetli Madenler
+                        </div>
+                    </div>
                 </div>
+                <div className={"flex"}></div>
+                <div className={"flex"}></div>
             </div>
             <br/>
-            <PriceCard buy={7279} label={"Gram Altın"} purity={"24 Ayar"} sell={"7322"} trend={"asd"}></PriceCard>
+            <div>
+
+                <PriceCard buy={7279} label={"Gram Altın"} purity={"24 Ayar"} sell={"7322"}
+                           shimmerClassname={"animate-bazaar-shimmer"} isFirst={true}></PriceCard>
+                <PriceCard buy={7279} label={"Gram Altın"} purity={"24 Ayar"} sell={"7322"}
+                           shimmerClassname={"animate-bazaar-shimmer-v2"}></PriceCard>
+                <PriceCard buy={7279} label={"Gram Altın"} purity={"24 Ayar"} sell={"7322"}
+                           shimmerClassname={"animate-bazaar-shimmer-v3"}></PriceCard>
+            </div>
+
         </div>
 
     )
