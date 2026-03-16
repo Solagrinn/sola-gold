@@ -12,10 +12,18 @@ const MainView = () => {
         });
     }, []);
     return (
+        // #797988
         <div>
             mainUi
             <div>{uiState}</div>
-            <BtlIcon height={200} width={200} color={"#797988"}></BtlIcon>
+            <div className={"flex  justify-center "}>
+
+                <div className={"flex"}>
+
+                    <BtlIcon height={200} width={200} color={"#fff"}></BtlIcon>
+
+                </div>
+            </div>
             <br/>
             <PriceCard buy={7279} label={"Gram Altın"} purity={"24 Ayar"} sell={"7322"} trend={"asd"}></PriceCard>
         </div>

@@ -21,7 +21,7 @@ const PriceCard = ({ label, purity, buy, sell }) => {
 
             <div className="relative z-10 flex gap-12 items-center">
                 <div className="text-right">
-                    <p className="text-white text-xs font-black uppercase tracking-widest mb-1">ALIŞ</p>
+                    <p className="text-white text-md font-black uppercase tracking-widest mb-1">ALIŞ</p>
                     <p className="text-6xl font-mono text-white font-bold tabular-nums">{buy}</p>
                 </div>
 
@@ -29,7 +29,7 @@ const PriceCard = ({ label, purity, buy, sell }) => {
                 <div className="h-20 w-[1px] bg-zinc-600/50 mx-2" />
 
                 <div className="text-right">
-                    <p className="text-white text-xs font-black uppercase tracking-widest mb-1">SATIŞ</p>
+                    <p className="text-white text-md font-black uppercase tracking-widest mb-1">SATIŞ</p>
                     <p className="text-6xl font-mono text-white font-bold tabular-nums">{sell}</p>
                 </div>
             </div>
